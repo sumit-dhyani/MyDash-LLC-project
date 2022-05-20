@@ -1,0 +1,15 @@
+
+.App {
+  
+  display: flex;
+  flex-direction: row;
+}
+.heading{
+  display: flex;
+  flex-direction: column;
+  width:100vh;
+}
+#chart{
+  display: flex;
+  flex-direction: column;
+}

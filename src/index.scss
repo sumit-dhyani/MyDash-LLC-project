@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100&display=swap');
+body {
+  margin: 0 auto;
+  font-family: 'Truculenta', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@mixin display{
+  display: flex;
+  flex-direction: column;
+}
+.container{
+  
+  @include display;
+  
+  
+  
+}
+.items{
+  @include display;
+  label{
+    font-size: medium;
+    margin-bottom: 10px;
+  }
+}
+.form{
+  padding:50px;
+  align-items:flex-start;
+  
+}
+.file{
+  height:50%;
+  padding:20px;
+}
+#image{
+  width:750px;
+  height:auto;
+  
+
+}
+.text_part{
+  height:30%;
+  width:750px;
+  text-align: center;
+  @include display;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+p{
+  width:400px;
+  text-align: center;
+}
+.form--details{
+  width: 400px;
+  height: 30px;
+  border-radius: 5px;
+  border-color: rgb(135, 218, 218);
+}
+.form--heading{
+  margin-bottom: 30px;
+  font-weight: 450;
+}
+$color1:rgb(160, 160, 236);
+button{
+  width:250px;
+  height:35px;
+  background-color: $color1;
+  color: white;
+  border-radius: 5px;
+  border-color: $color1;
+  
+}
+.error{
+  text-align: left;
+}
